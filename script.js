@@ -2,17 +2,17 @@
 
 // Storing and printing the random number
 let rand_num = Math.ceil(Math.random()*20);
-console.log(rand_num);
+// console.log(rand_num);
 // Storing and printing the highscore
 let highScore = document.querySelector(".highscore").textContent;
-console.log(highScore);
+// console.log(highScore);
 
 // The below code reflects the happenings when someone click on Check button
 document.querySelector(".check").addEventListener(
     "click", function(){
         let mynum = document.querySelector(".guess").value;
         mynum = Number(mynum);
-        console.log(mynum);
+        // console.log(mynum);
         // console.log(typeof(mynum));
 
         // Storing the current score in this variable
@@ -62,7 +62,7 @@ document.querySelector(".again").addEventListener(
         document.querySelector(".guess").value = "";
         document.querySelector(".score").textContent = 20;
         rand_num = Math.ceil(Math.random()*20);
-        console.log(rand_num);
+        // console.log(rand_num);
         document.querySelector("body").style.backgroundColor = "#222";
         document.querySelector(".number").style.width = "15rem";
         document.querySelector(".number").textContent = "?";
